@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url('https://th.bing.com/th/id/OIP.Wb0pO0OtX2HqAeWhPzcW_QHaFL?w=499&h=349&rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+}
+
+.top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0,0,0,0.295);
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+
+.text h1 {
+    font-weight: 700;
+    font-size: 5vh;
+}
+
+.text .image {
+    background-image: url('https://th.bing.com/th/id/R.8315e67a0b4ecd5c8abcae3d44ddccfd?rik=3lChq3ceTQmHVg&riu=http%3a%2f%2ftraveldigg.com%2fwp-content%2fuploads%2f2016%2f07%2fRocky-Mountains-Panorama.jpg&ehk=IyNfO8ytxIMiZskejZ9zwymacz1rFqXmXK9ptXYPL0k%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 230px;
+    
+}
+
+.rtext {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rtxt p {
+    font-size: 12px;
+}
+
+.icons i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.b1 {
+    width: 30%;
+    min-height: inherit;
+    background-image: url('https://tr.prysmian.com/sites/tr.prysmian.com/files/2023-11/Hub-trasportation-Card.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.b1 h1 {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.b1 p {
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.b2 {
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.b2 .up {
+    width: 100%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f1/Sunrise%2C_Kauai.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .up h1 {
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.b2 .up p {
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url('https://c8.alamy.com/comp/BA8YNW/bundles-of-paper-at-recycling-plant-BA8YNW.jpg');
+    /* background-size: cover; */
+    background-position: center;
+}
+
+.b2 .down .overlay {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(255,255,255,0.344);
+}
+
+.b3 {
+    width: 40%;
+    min-height: inherit;
+    background-image: url('https://th.bing.com/th/id/OIP.iEAreZY-KOubSUPt3aZpYgHaHa?w=612&h=612&rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+}
+
+.b3 .overlay {
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    padding: 4vw 8vh;
+    height: 100%;
+}
+
+.b3 .overlay p {
+    padding: 2.2vh;
+    font-weight: bolder;
+}
+
+@media (max-width: 700px) {
+    .rtxt {
+        flex-direction: column;
+    }
+    .b3 .overlay {
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media (max-width: 500px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1 {
+        font-size: 5vh;
+    }
+    .text .image {
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtxt {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtxt p {
+        margin-top: 10px;
+    }
+    .icons {
+        margin-top: 10px;
+    }
+    .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1, .b2, .b3 {
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2 .up {
+        min-height: 30vh;
+    }
+    .b3 {
+        background-position: left;
+    }
+}
